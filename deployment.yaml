@@ -7,17 +7,19 @@ metadata:
   name: e-commerce
   namespace: e-commerce
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: e-commerce
   strategy: {}
   template:
     metadata:
+      creationTimestamp: null
       labels:
         app: e-commerce
     spec:
       containers:
-        - image: soewailin/cake-e-commerce:v1.0.1
-        name: e-commerce
+      - image: soewailin/cake-e-commerce:v1.1
+        name: cake-e-commerce
         resources: {}
+status: {}
