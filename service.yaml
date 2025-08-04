@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: e-commerce
+  name: e-commerce-svc
+  namespace: e-commerce
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: e-commerce
+  type: LoadBalancer
