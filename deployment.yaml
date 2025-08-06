@@ -19,7 +19,7 @@ spec:
         app: e-commerce
     spec:
       containers:
-      - image: soewailin/cake-e-commerce:v1.1
+      - image: soewailin/cake-e-commerce:v1.0
         name: cake-e-commerce
         resources: {}
 status: {}
